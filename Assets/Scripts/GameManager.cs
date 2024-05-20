@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
         }
 
         StartNextLevel();
+
+        ScheduleDistraction();
     }
 
     public void StartNextLevel()

@@ -1192,8 +1192,8 @@ MonoBehaviour:
   - {fileID: 531267436}
   levelText: {fileID: 2040751463}
   GameOverPanel: {fileID: 610120195}
-  minDistractionCooldown: 5
-  maxDistractionCooldown: 10
+  minDistractionCooldown: 3
+  maxDistractionCooldown: 6
 --- !u!4 &661271944
 Transform:
   m_ObjectHideFlags: 0
@@ -2871,7 +2871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.9000244, y: 0}
+  m_AnchoredPosition: {x: 1.9001465, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421583360
