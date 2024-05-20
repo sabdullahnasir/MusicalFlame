@@ -68,8 +68,6 @@ public class GameManager : MonoBehaviour
 
     public void OnLevelComplete()
     {
-        //StartCoroutine(ResetButtons(1));
-        //animator.Play("ShowBG");
         PlayLevelAudio(LevelResult.Complete);
         StartNextLevel();
     }
@@ -80,16 +78,12 @@ public class GameManager : MonoBehaviour
 
         GameOverPanel.SetActive(true);
 
-        //ResetAllButtons();
         currentLevelSequence.RemoveRange(0, currentLevelSequence.Count);
         currentLevel = 0;
-        //StartNextLevel();
     }
 
     void CheckCorrectSequence(int index)
     {
-        Debug.Log("Current Index: " + index);
-
         if (currentLevelSequence[currentSequenceIndex] == index)
         {
             animator.Play("Flame" + index);
@@ -109,7 +103,6 @@ public class GameManager : MonoBehaviour
     IEnumerator ResetButtons(int timer)
     {
         yield return new WaitForSeconds(timer);
-        //ResetAllButtons();
     }
 
     IEnumerator ShowButtonHighlight()
