@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     List<Button> allFlameItems = new List<Button>();
     List<Image> allFlameImages = new List<Image>();
     int currentLevel;
-    List<int> currentLevelSequence;
+    List<int> currentLevelSequence = new List<int>();
     int currentSequenceIndex;
     public int minDistractionCooldown, maxDistractionCooldown;
 
